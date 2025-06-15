@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///C:/Users/HP/Downloads/happy-birthday-papa_Version5%20(1).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Papa!</title>
+  <link href="./Happy Birthday Papa!_files/css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    .birthday-card {
+      background: #f6e6ff; /* light lavender */
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+      width: 350px;
+      max-width: 90vw;
+      padding: 36px 30px 24px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: bounceIn 1s;
+    }
+    @keyframes bounceIn {
+      0% { transform: scale(0.7); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    .papa-photo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ffe066;
+      margin: 0 auto 18px auto;
+      box-shadow: 0 4px 12px rgba(255, 153, 51, 0.15);
+      display: block;
+      background: #fffbe9;
+    }
+    .cake {
+      margin: 0 auto 20px;
+      position: relative;
+      width: 80px;
+      height: 100px;
+    }
+    .cake-base, .cake-layer {
+      border-radius: 12px 12px 20px 20px;
+      position: absolute;
+      left: 0; right: 0; margin: auto;
+    }
+    .cake-base {
+      width: 80px; height: 35px;
+      background: #f67280;
+      bottom: 0;
+      box-shadow: 0 4px 0 #b44b53;
+    }
+    .cake-layer {
+      width: 74px; height: 22px; background: #ffb7b2; bottom: 30px; border-radius: 10px 10px 16px 16px;
+      box-shadow: 0 3px 0 #ec768c;
+    }
+    .cake-layer.top {
+      width: 68px; height: 16px; background: #fff; bottom: 48px; border-radius: 8px 8px 12px 12px;
+      box-shadow: 0 2px 0 #ffe6ea;
+    }
+    .candle {
+      position: absolute; left: 50%; bottom: 60px;
+      width: 8px; height: 28px; margin-left: -4px;
+      background: #ffd460;
+      border-radius: 4px;
+      z-index: 2;
+      box-shadow: 0 0 8px #ffb700;
+      display: flex; align-items: flex-start; justify-content: center;
+    }
+    .flame {
+      position: absolute;
+      top: -13px; left: 50%; margin-left: -6px;
+      width: 12px; height: 17px;
+      background: radial-gradient(ellipse at center, #ffe066 0%, #ffb700 80%, transparent 100%);
+      border-radius: 50% 50% 85% 85%;
+      animation: flameFlicker 1s infinite alternate;
+      opacity: 0.8;
+      z-index: 3;
+    }
+    @keyframes flameFlicker {
+      0% { transform: scaleY(1) scaleX(1); opacity: 1;}
+      50% { transform: scaleY(1.2) scaleX(0.95); opacity: 0.92;}
+      100% { transform: scaleY(1) scaleX(1.1); opacity: 1;}
+    }
+    .card-title {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.1em;
+      color: #e17055;
+      margin: 10px 0 0 0;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 6px #fff7ee;
+    }
+    .subtitle {
+      color: #636e72;
+      font-size: 1.1em;
+      font-weight: 400;
+      margin: 15px 0 18px 0;
+    }
+    .gift-emoji {
+      font-size: 2.5em;
+      margin: 20px 0 12px 0;
+      animation: popGift 1.2s;
+    }
+    @keyframes popGift {
+      0% { transform: scale(0.5); opacity: 0;}
+      60% { transform: scale(1.2);}
+      100% { transform: scale(1);}
+    }
+    .footer-note {
+      font-size: 0.92em;
+      color: #b2a09a;
+      margin-top: 18px;
+    }
+    @media (max-width: 450px) {
+      .birthday-card { padding: 22px 5vw 16px 5vw; }
+      .card-title { font-size: 1.4em; }
+      .cake { width: 54px; height: 68px;}
+      .cake-base { width: 54px; height: 24px;}
+      .cake-layer { width: 50px; height: 14px;}
+      .cake-layer.top { width: 46px; height: 9px;}
+      .candle { width: 5px; height: 17px; margin-left: -2.5px; bottom: 34px;}
+      .flame { width: 7px; height: 10px; margin-left: -3.5px; top: -7px;}
+      .papa-photo { width: 70px; height: 70px; border-width: 3px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="birthday-card">
+    <img src="./Happy Birthday Papa!_files/IMG-2120.jpg" alt="Papa&#39;s Photo" class="papa-photo">
+    <div class="cake">
+      <div class="cake-base"></div>
+      <div class="cake-layer"></div>
+      <div class="cake-layer top"></div>
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+    </div>
+    <div class="card-title">Happy Birthday Papa! ☻☻</div>
+    <div class="subtitle">
+      Wishing you a very happy birthday filled with love and laughter.
+    </div>
+    <div class="gift-emoji">🎁</div>
+    <div class="footer-note">
+      With lots of love,<br>
+      Mansi 💖
+    </div>
+  </div>
+
+</body></html>
